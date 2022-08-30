@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Media Queries 2</title>
-    <link rel="stylesheet" href="main.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="a">a</div>
-      <div class="b">b</div>
-      <div class="c">c</div>
-      <div class="d">d</div>
-      <div class="e">e</div>
-      <div class="f">f</div>
+<html>
+
+<head>
+  <title>Media Query 3</title>
+  <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="a child">a</div>
+    <div class="flex">
+      <div class="parent">
+        <div class="b child">b</div>
+        <div class="child-parent">
+          <div class="c child">c</div>
+          <div class="d child">d</div>
+          <div class="e child">e</div>
+        </div>
+      </div>
+      <div class="parent-2">
+        <div class="f child">f</div>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <script src="src/index.js"></script>
+</body>
+
 </html>

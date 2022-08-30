@@ -1,3 +1,46 @@
 body {
+  box-sizing: border-box;
   background: papayawhip;
+}
+
+.child {
+  border: 1px solid black;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex>.parent {
+  width: 75%;
+}
+
+.flex>.parent-2 {
+  width: 25%;
+}
+
+.child-parent {
+  display: flex;
+}
+
+.child-parent>* {
+  flex: 1;
+}
+
+.f {
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .flex>.parent {
+    width: 100%;
+  }
+
+  .flex>.parent-2 {
+    width: 100%;
+  }
 }
